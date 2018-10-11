@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
     <script src="js/modernizr.custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
     <title>Hillary Hardiman</title>
 </head>
 
@@ -61,35 +62,38 @@
                         <section>
                             <h2>Projects</h2>
                             <div class="card" id="wine" style="width: 20rem;">
-                                <a href="https://lylekarim.github.io/wine-cellar/index.html" target="blank"><img class="card-img-top" src="assets/images/wine-cellar-2.png"
-                                    alt="Card image cap" style="width: 16rem;"></a>
+                                <a href="https://lylekarim.github.io/wine-cellar/index.html" target="blank"><img class="card-img-top"
+                                        src="assets/images/wine-cellar-2.png" alt="Card image cap" style="width: 16rem;"></a>
                                 <div class="card-body">
                                     <h5 class="card-title">Wine Cellar</h5>
-                                    <p class="card-text">Handy tool to track your wines.  This was a group project with three others.</p>
+                                    <p class="card-text">Handy tool to track your wines. This was a group project with
+                                        three others.</p>
                                 </div>
                             </div>
                             <div class="card" id="giphy" style="width: 20rem;">
-                                <a href="https://hardimanhk.github.io/giftastic/" target="blank"><img class="card-img-top" src="assets/images/giphy-2.png"
-                                    alt="Card image cap" style="width: 16rem;"></a>
+                                <a href="https://hardimanhk.github.io/giftastic/" target="blank"><img class="card-img-top"
+                                        src="assets/images/giphy-2.png" alt="Card image cap" style="width: 16rem;"></a>
                                 <div class="card-body">
                                     <h5 class="card-title">Giphy Search</h5>
                                     <p class="card-text">Get your meme on.</p>
                                 </div>
                             </div>
                             <div class="card" id="beatles" style="width: 20rem;">
-                                <a href="https://hardimanhk.github.io/TriviaGame/" target="blank"><img class="card-img-top" src="assets/images/beatles.png"
-                                    alt="Card image cap" style="width: 16rem;"></a>
+                                <a href="https://hardimanhk.github.io/TriviaGame/" target="blank"><img class="card-img-top"
+                                        src="assets/images/beatles.png" alt="Card image cap" style="width: 16rem;"></a>
                                 <div class="card-body">
                                     <h5 class="card-title">Beatles Trivia</h5>
-                                    <p class="card-text">Random facts you didn't know you didn't want to know about the Beatles.</p>
+                                    <p class="card-text">Random facts you didn't know you didn't want to know about the
+                                        Beatles.</p>
                                 </div>
                             </div>
                             <div class="card" id="harry" style="width: 20rem;">
-                                <a href="https://hardimanhk.github.io/unit-4-game-2/" target="blank"><img class="card-img-top" src="assets/images/harry-potter-rpg-2.png"
-                                    alt="Card image cap" style="width: 16rem;"></a>
+                                <a href="https://hardimanhk.github.io/unit-4-game-2/" target="blank"><img class="card-img-top"
+                                        src="assets/images/harry-potter-rpg-2.png" alt="Card image cap" style="width: 16rem;"></a>
                                 <div class="card-body">
                                     <h5 class="card-title">Harry Potter RPG Game</h5>
-                                    <p class="card-text">A simple role playing game that allows users to battle with either the good guys or the dark lords.</p>
+                                    <p class="card-text">A simple role playing game that allows users to battle with
+                                        either the good guys or the dark lords.</p>
                                 </div>
                             </div>
                         </section>
@@ -106,18 +110,9 @@
                         </section>
                         <section>
                             <h2>Interests</h2>
-                            <p>Delightful ascenders contrast prototype. Ligature jakob nielsen user measure. Ligature
-                                contrast glyph rule of thirds composition interstitial dribbble. Mental model
-                                typography urbanized balance. Resolution rounded corners IDEO constraints dribbble
-                                persona. Portfolio sketch baseline 66-character line. Usability testing mental model
-                                simplicity aspect ratio pencil type. Usable sans-serif visualization leading prägnanz
-                                baseline pencil fireworks clarity omnigraffle.</p>
-                            <p>Paper prototype urbanized headroom typography splash screen pencil modal branding.
-                                Retina omnigraffle objectified descender navigation adobe ethnography. Innovate design
-                                by committee modern hero message. Contrast user-centered color theory keep it simple
-                                visuals bevel adobe descender splash screen. From focus group accessibility sans-serif
-                                archetype pixel-perfect complementary skeuomorphism. Focus group iconography
-                                figure-ground navigation user-centered omnigraffle from.</p>
+                            <div id="my-chart">
+                                <canvas id="myChart" style="width:300px; height: 300px;"></canvas>
+                            </div>
                         </section>
                     </div><!-- /page-inner -->
                 </div><!-- /page-right -->
@@ -154,6 +149,7 @@
         <script src="assets/javascript/classie.js"></script>
         <script src="assets/javascript/modernizr.custom.js"></script>
         <script src="assets/javascript/portfolio.js"></script>
+        <script src="assets/javascript/my-chart.js"></script>
     </body>
 
 </html>
