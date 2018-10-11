@@ -1,27 +1,49 @@
 /* General Blueprint Style */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
 @font-face {
 	font-family: 'bpicons';
-	src:url('../fonts/bpicons/bpicons.eot');
-	src:url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
+	src: url('../fonts/bpicons/bpicons.eot');
+	src: url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/bpicons/bpicons.woff') format('woff'),
 		url('../fonts/bpicons/bpicons.ttf') format('truetype'),
 		url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
 	font-weight: normal;
 	font-style: normal;
-} /* Made with http://icomoon.io/ */
+}
 
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 100%; padding: 0; margin: 0;}
+/* Made with http://icomoon.io/ */
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
+}
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before, .clearfix:after { content: " "; display: table; }
-.clearfix:after { clear: both; }
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
 
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-    color: #fff;
-    background: #333;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #fff;
+	background: #333;
 }
 
 a {
@@ -53,6 +75,24 @@ a {
 	background: rgb(34, 20, 20);
 	margin-bottom: 5px;
 	border: 2px solid lightgray;
+}
+
+#contact-submit {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 12px;
+	margin: 0 auto;
+	padding: 5px;
+	display: block;
+	width: 30%;
+	color: lightgray;
+	background: #724040;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	border: 2px solid lightgray;
+}
+
+button:hover {
+	cursor: pointer;
 }
 
 form {
@@ -96,6 +136,11 @@ form {
 	margin: 10px;
 }
 
+.card {
+	float: left;
+	margin: 0px 20px 50px 50px;
+}
+
 a:hover {
 	color: #000;
 }
@@ -119,7 +164,7 @@ a:hover {
 	font-weight: 400;
 }
 
-.codropsheader > span {
+.codropsheader>span {
 	display: block;
 	position: relative;
 	z-index: 9999;
@@ -129,7 +174,7 @@ a:hover {
 	padding: 0 0 0.6em 0.1em;
 }
 
-.codropsheader > span span:after {
+.codropsheader>span span:after {
 	width: 30px;
 	height: 30px;
 	left: -12px;
@@ -139,7 +184,7 @@ a:hover {
 	position: relative;
 }
 
-.codropsheader > span span:hover:before {
+.codropsheader>span span:hover:before {
 	content: attr(data-content);
 	text-transform: none;
 	text-indent: 0;
@@ -175,7 +220,7 @@ a:hover {
 	border: 3px solid #fff;
 }
 
-.codropsheader nav a > span {
+.codropsheader nav a>span {
 	display: none;
 }
 
@@ -223,15 +268,19 @@ a:hover {
 .bp-icon-next:after {
 	content: "\e000";
 }
+
 .bp-icon-drop:after {
 	content: "\e001";
 }
+
 .bp-icon-archive:after {
 	content: "\e002";
 }
+
 .bp-icon-about:after {
 	content: "\e003";
 }
+
 .bp-icon-prev:after {
 	content: "\e004";
 }
@@ -252,13 +301,14 @@ a:hover {
 .demos a:hover,
 .demos a:focus,
 .demos a.current {
-	color: rgba(0,0,0,.4);
+	color: rgba(0, 0, 0, .4);
 }
 
 @media screen and (max-width: 73.375em) {
 	.codropsheader {
 		text-align: center;
 	}
+
 	.codropsheader h1,
 	.codropsheader nav,
 	.demos {
@@ -266,14 +316,18 @@ a:hover {
 		margin: 0 auto;
 		padding: 0.15em 0;
 	}
-	.codropsheader > span {
+
+	.codropsheader>span {
 		padding: 0;
 	}
-	.codropsheader > span span:after {
+
+	.codropsheader>span span:after {
 		display: none;
 	}
 }
 
 @media screen and (max-height: 30.25em) {
-	.codropsheader nav { display: none; }
+	.codropsheader nav {
+		display: none;
+	}
 }

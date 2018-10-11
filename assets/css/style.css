@@ -227,6 +227,9 @@ body {
 }
 
 .page-inner p {
+    display: block;
+    word-spacing: 1px;
+    line-height: 1.25em;
 	font-weight: 300;
 	font-size: 1.2em;
 }
