@@ -141,6 +141,10 @@ form {
 	margin: 0px 20px 50px 50px;
 }
 
+#giphy {
+	padding-bottom: 70px;
+}
+
 a:hover {
 	color: #000;
 }
