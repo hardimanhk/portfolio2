@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
     <script src="js/modernizr.custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <title>Hillary Hardiman</title>
 </head>
 
@@ -22,8 +24,12 @@
                 <div class="intro">
                     <div class="side side-left">
                         <div class="intro-content">
-                            <button id="contact-button">Contact Me</button>
-                            <button id="resume-button">Resume</button>
+                            <div class="side-left1">
+                                <button id="contact-button">Contact Me</button>
+                            </div>
+                            <div class="side-left2">
+                                <button id="resume-button">Resume</button>
+                            </div>
                         </div>
                         <div class="overlay"></div>
                     </div>
@@ -61,6 +67,16 @@
                         </section>
                         <section>
                             <h2>Projects</h2>
+                            <div class="card" id="f2t" style="width: 20rem;">
+                                <a href="https://radiant-fortress-59044.herokuapp.com/" target="blank"><img class="card-img-top"
+                                        src="assets/images/2.png" alt="Card image cap" style="width: 16rem;"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Fridge 2 Table</h5>
+                                    <p class="card-text">This app lists recipes you can make with ingredients you have
+                                        on hand.</p>
+                                    <a href="https://github.com/hardimanhk/project2" class="card-link">GitHub Repo</a>
+                                </div>
+                            </div>
                             <div class="card" id="wine" style="width: 20rem;">
                                 <a href="https://lylekarim.github.io/wine-cellar/index.html" target="blank"><img class="card-img-top"
                                         src="assets/images/wine-cellar-2.png" alt="Card image cap" style="width: 16rem;"></a>
@@ -68,6 +84,7 @@
                                     <h5 class="card-title">Wine Cellar</h5>
                                     <p class="card-text">Handy tool to track your wines. This was a group project with
                                         three others.</p>
+                                    <a href="https://github.com/lylekarim/wine-cellar" class="card-link">GitHub Repo</a>
                                 </div>
                             </div>
                             <div class="card" id="giphy" style="width: 20rem;">
@@ -76,6 +93,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Giphy Search</h5>
                                     <p class="card-text">Get your meme on.</p>
+                                    <a href="https://github.com/hardimanhk/giftastic" class="card-link">GitHub Repo</a>
                                 </div>
                             </div>
                             <div class="card" id="beatles" style="width: 20rem;">
@@ -85,15 +103,7 @@
                                     <h5 class="card-title">Beatles Trivia</h5>
                                     <p class="card-text">Random facts you didn't know you didn't want to know about the
                                         Beatles.</p>
-                                </div>
-                            </div>
-                            <div class="card" id="harry" style="width: 20rem;">
-                                <a href="https://hardimanhk.github.io/unit-4-game-2/" target="blank"><img class="card-img-top"
-                                        src="assets/images/harry-potter-rpg-2.png" alt="Card image cap" style="width: 16rem;"></a>
-                                <div class="card-body">
-                                    <h5 class="card-title">Harry Potter RPG Game</h5>
-                                    <p class="card-text">A simple role playing game that allows users to battle with
-                                        either the good guys or the dark lords.</p>
+                                    <a href="https://github.com/hardimanhk/TriviaGame" class="card-link">GitHub Repo</a>
                                 </div>
                             </div>
                         </section>
@@ -116,28 +126,23 @@
                         </section>
                     </div><!-- /page-inner -->
                 </div><!-- /page-right -->
-                <div class="page page-left">
+                <div class="page page-left1">
                     <div class="page-inner">
                         <section>
                             <div id="contact">
-                                <h1>Get in Touch</h1>
                                 <div id="tiny-break"></div>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="name-request"></label>
-                                        <input type="text" class="form-control" id="name-request" aria-describedby="emailHelp"
-                                            placeholder="Your Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email-request"></label>
-                                        <input type="email" class="form-control" id="email-request" placeholder="Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="message-text"></label>
-                                        <textarea class="form-control" id="message-text" rows="3" placeholder="Message"></textarea>
-                                    </div>
-                                    <button type="submit" id="contact-submit">Submit</button>
-                                </form>
+                                <h2>email: hardimanhk@gmail.com</h2>
+                                <h2>mobile: 804.687.4175</h2>
+                                <a href="https://github.com/hardimanhk" target="blank">GitHub Profile</a>
+                            </div>
+                        </section>
+                    </div><!-- /page-inner -->
+                </div><!-- /page-left -->
+                <div class="page page-left2">
+                    <div class="page-inner">
+                        <section>
+                            <div id="resume">
+                                <embed src="assets/images/Hardiman.Resume_12-4-18.pdf" width="800px" height="1100px" />
                             </div>
                         </section>
                     </div><!-- /page-inner -->

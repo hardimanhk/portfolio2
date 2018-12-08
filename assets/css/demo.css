@@ -59,7 +59,7 @@ a {
 	display: block;
 	width: 50%;
 	color: lightgray;
-	background: rgb(34, 20, 20);
+	background: rgb(48, 8, 8);
 	margin-bottom: 5px;
 	border: 2px solid lightgray;
 }
@@ -72,7 +72,7 @@ a {
 	display: block;
 	width: 50%;
 	color: lightgray;
-	background: rgb(34, 20, 20);
+	background: rgb(48, 8, 8);
 	margin-bottom: 5px;
 	border: 2px solid lightgray;
 }
@@ -312,6 +312,7 @@ a:hover {
 .demos a.current {
 	color: rgba(0, 0, 0, .4);
 }
+
 
 @media screen and (max-width: 73.375em) {
 	.codropsheader {

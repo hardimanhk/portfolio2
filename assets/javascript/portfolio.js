@@ -8,6 +8,7 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
+
 (function() {
 
 	'use strict';
@@ -20,9 +21,11 @@
 	}
 
 	var splitlayout = document.getElementById( 'splitlayout' ),
-		leftSide = splitlayout.querySelector( 'div.intro > div.side-left' ),
+		leftSide1 = splitlayout.querySelector( 'div.intro > div.side-left > div.intro-content > div.side-left1' ),
+		leftSide2 = splitlayout.querySelector( 'div.intro > div.side-left > div.intro-content > div.side-left2'),
 		rightSide = splitlayout.querySelector( 'div.intro > div.side-right' ),
-		pageLeft = splitlayout.querySelector( 'div.page-left' ),
+		pageLeft1 = splitlayout.querySelector( 'div.page-left1' ),
+		pageLeft2 = splitlayout.querySelector( 'div.page-left2' ),
 		pageRight = splitlayout.querySelector( 'div.page-right' ),
 		eventtype = mobilecheck() ? 'touchstart' : 'click',
 		transEndEventNames = {
@@ -40,13 +43,24 @@
 		}
 		classie.add( splitlayout, 'reset-layout' );
 
-		leftSide.querySelector( 'div.intro-content' ).addEventListener( eventtype, function( ev ) {
+		leftSide1.addEventListener( eventtype, function( ev ) {
 			reset();
+			$(".page-left1").show();
+			$(".page-left2").hide();
+			classie.add( splitlayout, 'open-left' );
+		} );
+
+		leftSide2.addEventListener( eventtype, function( ev ) {
+			reset();
+			$(".page-left2").show();
+			$(".page-left1").hide();
 			classie.add( splitlayout, 'open-left' );
 		} );
 
 		rightSide.querySelector( 'div.intro-content' ).addEventListener( eventtype, function( ev ) {
 			reset();
+			$(".page-left2").hide();
+			$(".page-left1").hide();
 			classie.add( splitlayout, 'open-right' );
 		} );
 
@@ -61,7 +75,7 @@
 				ev.preventDefault();
 				ev.stopPropagation();
 				var dir = classie.has( ev.target, 'back-right' ) ? 'left' : 'right',
-					page = dir === 'right' ? pageRight : pageLeft;
+					page = dir === 'right' ? pageRight : (pageLeft1 || pageLeft2);
 				classie.remove( splitlayout, 'open-' + dir );
 				classie.add( splitlayout, 'close-' + dir );
 				page.addEventListener( transEndEventName, onEndTransFn );

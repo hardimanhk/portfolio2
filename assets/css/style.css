@@ -17,6 +17,11 @@ body {
 	width: 100%;
 }
 
+/* GitHub Links */
+.card-link {
+	color: maroon;
+}
+
 /* Intro sides */
 .side {
 	position: fixed;
@@ -54,9 +59,9 @@ body {
 
 .side-left {
 	left: 0;
-	background: rgb(34, 20, 20);
+	background: rgb(48, 8, 8);
 	color: #fff;
-	outline: 1px solid rgb(34, 20, 20); /* avoid gap */
+	outline: 1px solid rgb(48, 8, 8); /* avoid gap */
 }
 
 .side-right {
@@ -122,7 +127,7 @@ body {
 }
 
 .side-right .intro-content h1 > span:nth-child(2):before {
-	background: red;
+	background: maroon;
 }
 
 .back {
@@ -134,7 +139,7 @@ body {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	color: red;
+	color: maroon;
 	text-align: center;
 	font-size: 22px;
 	line-height: 44px;
@@ -156,7 +161,7 @@ body {
 	right: 12.5%;
 	-webkit-transform: translateX(50%);
 	transform: translateX(50%);
-	color: red;
+	color: maroon;
 }
 
 .open-right .back-left,
@@ -208,7 +213,7 @@ body {
 }
 
 .splitlayout.open-left {
-	background: #724040;
+	background: gray;
 }
 
 /* Inner page content */
